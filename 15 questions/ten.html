@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <meta charset='utf-8'>
+        <style>
+            section {
+                border: 1px solid black;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form>
+            <section>
+                <h3>Personal Information</h3>
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name"><br>
+                
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name"><br>
+                
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other<br>
+                
+                <label>Date of Birth:</label>
+                <input type="date"><br>
+                
+                <label>Upload Photo:</label>
+                <input type="file"><br>
+            </section>
+            
+            <section>
+                <h3>Contact Details</h3>
+                <label>Email:</label>
+                <input type="email"><br>
+                
+                <label>Phone Number:</label>
+                <input type="tel"><br>
+                
+                <label>Address:</label>
+                <textarea rows="3" cols="30"></textarea><br>
+                
+                <label>Country:</label>
+                <select>
+                    <option>-Select-</option>
+                    <option>India</option>
+                    <option>Bhutan</option>
+                    <option>Russia</option>
+                </select>
+            </section>
+            
+            <section>
+                <h3>Account Preferences</h3>
+                <label>Username:</label>
+                <input type="text"><br>
+                
+                <label>Password:</label>
+                <input type="password"><br>
+                
+                <label>Confirm Password:</label>
+                <input type="password"><br>
+                
+                <h4>Subscription Preferences:</h4>
+                <input type="checkbox"> Subscribe to Newsletter<br>
+                <input type="checkbox"> Receive Offers<br>
+            </section>
+            
+            <section>
+                <h3>Other Information</h3>
+                <label>Favorite Color:</label>
+                <input type="color"><br>
+                
+                <label>Personal Website:</label>
+                <input type="url"><br>
+                
+                <label>Rate Us:</label>
+                <input type="range" min="1" max="10"><br>
+                
+                <label>Preferred Contact Time:</label>
+                <input type="time"><br>
+            </section>
+            
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
